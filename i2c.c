@@ -69,9 +69,7 @@ u8 i2cRead(void)
    return rxByte;
 }
 
-/* 
-   master takes ack from slave after every byte written
-*/
+//   master takes ack from slave after every byte written
 void i2cAck(void)
 {
    scl=0;//master make scl=0
